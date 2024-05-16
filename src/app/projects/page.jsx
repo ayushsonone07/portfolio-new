@@ -3,7 +3,54 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-import projects from "../../data/projects.json"
+// import projects from "../../data/projects.json"
+
+const projects = [
+  {
+    id: 1,
+    image: "/projects/p6.png",
+    title: "Calculator",
+    description: "A Simple Calculator WebAPP using HTML, CSS And JS",
+    link: "https://ayushsonone07.github.io/calculator/",
+  },
+  {
+    id: 2,
+    image:"/projects/p5.png",
+    description: "A simple ToDo list Project made using HTML, CSS and JS",
+    link: "https://ayushsonone07.github.io/TODO_List/",
+  },
+  {
+    id: 3,
+    image:"/projects/p4.png",
+    title: "QR CODE Generator",
+    description:
+      " a simple QR Code generator web app that uses api to instantlt generate QR codes",
+    link: "https://ayushsonone07.github.io/QR_CODE-_Generator/",
+  },
+  {
+    id: 4,
+    image:"/projects/p3.png",
+    title: "jokeran",
+    description: "Jokeran is Simple app which tells a hindi joke when you enter into that web page.",
+    link: "https://ayushsonone07.github.io/joke/",
+  },
+  {
+   id: 5,
+   image:"/projects/p2.png",
+   title: "Promptia",
+   description: "A FullStack Web App Project where you can Login with your Google Account and after that you can share, Edit and Delete your thoughts.",
+   link: "https://promptia-alpha.vercel.app",
+  },
+  {
+    id: 7,
+    image:"/projects/p1.png",
+    title: "Direct Whatsapp",
+    description: "Direct whatsapp is a service which allows users to chat Directly. without saving the Phone number.",
+    link: "https://ayushsonone07.github.io/DirectWhatsapp/",
+  },
+];
+
+projects.reverse()
 
 const PortfolioPage = () => {
   const ref = useRef();
@@ -36,7 +83,7 @@ const PortfolioPage = () => {
                       {item.title}
                     </h1>
                     <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                      <Image src={item.img} alt="" fill />
+                      <Image src={item.image} alt="" fill />
                     </div>
                     <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                       {item.desc}
