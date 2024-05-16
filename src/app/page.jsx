@@ -28,7 +28,7 @@ const Homepage = () => {
         <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
           {/* IMAGE CONTAINER */}
           <div className="h-1/2 lg:h-full lg:w-1/2 relative pt-14">
-            <Image src="/profile.png" alt="profile" width="600" height="800" className="object-contain pr-10" />
+            <Image src="/Profile.png" alt="profile" width="600" height="800" className="object-contain pr-10" />
             {/* <div className="absolute inset-0 bg-gradient-to-t from-pink-50 opacity-70 from-8% " /> */}
           </div>
           {/* TEXT CONTAINER */}
